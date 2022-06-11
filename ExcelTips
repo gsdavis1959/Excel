@@ -3,3 +3,15 @@
 =hours/24, then format result as h:mm
 # calculate running total in power pivot
 https://www.myonlinetraininghub.com/power-pivot-running-total
+
+
+# copy worksheet to another file
+Sub CopyWorkbook()
+
+Dim sh as Worksheet,  wb as workbook
+
+Set wb = workbooks("Target workbook")
+Workbooks("source workbook").Worksheets(Array("sheet1","sheet2")).Copy _
+         After:=wb.Sheets(wb.sheets.count)
+
+End Sub
