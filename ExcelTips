@@ -15,3 +15,11 @@ Workbooks("source workbook").Worksheets(Array("sheet1","sheet2")).Copy _
          After:=wb.Sheets(wb.sheets.count)
 
 End Sub
+
+Sub Copy_to_Another_Multiple()
+Sheets(Array("List-1", "List-2", "List-3")).Copy Before:=Workbooks("Destination.xlsx").Sheets(1)
+End Sub
+
+Sub Copy_to_Another_Multiple()
+Sheets(Array("List-1", "List-2", "List-3")).Copy
+End Sub
