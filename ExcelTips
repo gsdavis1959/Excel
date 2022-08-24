@@ -23,3 +23,6 @@ End Sub
 Sub Copy_to_Another_Multiple()
 Sheets(Array("List-1", "List-2", "List-3")).Copy
 End Sub
+
+
+https://wellsr.com/vba/2018/excel/excel-vba-autofilter-to-filter-data-table/
